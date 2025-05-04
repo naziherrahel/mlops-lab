@@ -7,7 +7,8 @@ def normalize(data):
 def load_and_normalize_iris():
     iris = load_iris()
     df = pd.DataFrame(iris.data, columns=iris.feature_names)
-    return normalize(df)
+    # return normalize(df)
+    return df 
 
 if __name__ == "__main__":
     df_norm = load_and_normalize_iris()
